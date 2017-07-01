@@ -37,7 +37,7 @@ public class EntitySnowflakeFX extends Particle
         this.particleAge = world.rand.nextInt(2);
         this.particleAlpha = 1.0F;
         this.particleGravity = 0.02F;
-        this.canCollide = false;   
+        this.isCollided = false;   
     }
     
     @Override
