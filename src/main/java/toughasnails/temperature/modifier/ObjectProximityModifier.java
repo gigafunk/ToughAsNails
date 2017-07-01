@@ -93,7 +93,7 @@ public class ObjectProximityModifier extends TemperatureModifier
         Material material = state.getMaterial();
         Biome biome = world.getBiomeGenForCoords(player.getPosition());
         ResourceLocation registryName = state.getBlock().getRegistryName();
-        if (registryName == null) return 0.0F;
+        if (registryName == null) {System.out.println(state.getBlock()); return 0.0F;}
         String blockName = state.getBlock().getRegistryName().toString();
         //Blocks
         if (TANConfig.blockTemperatureData.containsKey(blockName))
